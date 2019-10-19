@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "UserCreateStories";
+    Layout = "~/Views/Shared/_Layout - Copy.cshtml";
+}
+
+<form>
+    <fieldset>
+        <legend>Story</legend>
+        <div class="form-group">
+            <label for="exampleInputName">Title</label>
+            <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="InputDescription">Description</label>
+            <textarea class="form-control" id="exampleTextarea" rows="20"></textarea>
+        </div>
+        <br />
+        <br />
+        <a class="btn btn-primary " href="@Url.Action("Stories","Program")">Create</a><br />
+        <br />
+        <br />
+        <a class="btn btn-primary " href="@Url.Action("Stories","Program")">Cancel</a><br />
+
+
+    </fieldset>
+</form>
+

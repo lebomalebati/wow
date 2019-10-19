@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "UsersCreate";
+    Layout = "~/Views/Shared/_Layout - Copy.cshtml";
+}
+
+
+<form>
+    <fieldset>
+        <legend>User</legend>
+        <div class="form-group">
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="InputDescription">Description</label>
+            <textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
+        </div>
+        <br />
+        <br />
+        <a class="btn btn-primary " href="@Url.Action("Users","Admin")">Create</a><br />
+        <br />
+        <br />
+        <a class="btn btn-primary " href="@Url.Action("Users","Admin")">Cancel</a><br />
+    </fieldset>
+</form>
+

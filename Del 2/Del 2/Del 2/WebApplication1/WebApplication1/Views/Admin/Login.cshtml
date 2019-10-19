@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout - Copy.cshtml";
+}
+
+<h2>LogIn</h2>
+
+<form>
+    <fieldset>
+
+
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email/Username</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+
+
+    </fieldset>
+
+    <div class="form-group">
+        <a class="btn btn-primary" href="@Url.Action("Index","Admin")">LogIn</a>
+        <br /><span>New admin?</span><a class="btn btn-link" href="@Url.Action("Signup", "Admin")">Sign Up</a>
+    </div>
+
+
+
+
+
+</form>
+

@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "PetitionsCreate";
+    Layout = "~/Views/Shared/_Layout - Copy.cshtml";
+}
+
+<form>
+    <fieldset>
+        <legend>Petition</legend>
+        <div class="form-group">
+            <label for="exampleInputName">Title</label>
+            <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="InputBackground">Background</label>
+            <textarea class="form-control" id="exampleTextarea" rows="20"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="InputGoal">Goal</label>
+            <textarea class="form-control" id="exampleTextarea" rows="20"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="InputBy">By</label>
+            <input type="date" class="form-control" id="exampleInputDate" placeholder="yyyy-mm-dd">
+        </div>
+        <br />
+        <br />
+
+        <div class="form-group">
+            <a class="btn btn-primary " href="@Url.Action("Petitions","Admin")">Create</a><br />
+            <a class="btn btn-primary " href="@Url.Action("Petitions","Admin")">Cancel</a><br />
+        </div>
+
+    </fieldset>
+</form>
+

@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewBag.Title = "Forms";
+    Layout = "~/Views/Shared/_Layout - Copy.cshtml";
+}
+
+<h1>Forms</h1>
+<br />
+<a class="btn btn-primary " href="@Url.Action("FormsCreate","Admin")">New Form</a>
+<br />
+<br />
+
+<form >
+    <div class="piece" >
+        <h3>Current LogIn Form</h3>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email/Username</label>
+            <input type="email" readonly="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" readonly="" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+            <a class="btn btn-primary disabled"  href="@Url.Action("StartPetition","Program")">LogIn</a>
+            <a class="btn btn-primary disabled" href="@Url.Action("Index","Program")">Cancel</a><br />
+            <br /><span>Don't have an account?</span><a class="btn btn-link disabled" href="@Url.Action("SignUp", "Program")">Sign Up</a>
+            <br />
+            <br />
+            <a class="btn btn-danger " href="@Url.Action("FormsUpdate","Admin")">Update</a>
+            <a class="btn btn-danger " href="@Url.Action("FormsDelete","Admin")">Delete</a>
+        </div>
+    </div>
+
+</form>
+
+<br />
+<br />
+
+<form >
+    <div class="piece">
+        <h3>Current Sign In Form</h3>
+        <div class="form-group">
+            <label for="staticUserName">User Name</label>
+            <input type="text" readonly="" class="form-control" id="exampleInputUserName" aria-describedby="usernameHelp" placeholder="Enter username">
+        </div>
+
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" readonly="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" readonly="" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword2">Re-Enter Password</label>
+            <input type="password" readonly="" class="form-control" id="exampleInputPassword2" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <a class="btn btn-primary disabled" href="@Url.Action("StartPetition","Program")">SignUp</a>
+            <a class="btn btn-primary disabled" href="@Url.Action("Index","Program")">Cancel</a><br />
+            <br /><span>Already have an account?</span><a class="btn btn-link disabled" href="@Url.Action("LogIn", "Program")">Sign In</a>
+            <br />
+            <br />
+            <a class="btn btn-danger " href="@Url.Action("FormsUpdate","Admin")">Update</a>
+            <a class="btn btn-danger " href="@Url.Action("FormsDelete","Admin")">Delete</a>
+        </div>
+        </div>
+</form>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<form style="float:left">
+    <h3>Current FAQ Form</h3><br />
+    <br />
+    <h2>FAQ</h2><br />
+    <br />
+    <h4>How do you sign up for a new petition</h4>
+    <p>eubfjbanjkbkhbkbvkjbajlehurhhfbhvvhbvhbbrrbrubbbfjbjkruhfjnjbhbhkbebrhee</p>
+    <br />
+    <br />
+    <br />
+    <h2>Contact Details</h2><br />
+    <br />
+    <address>
+        1059 Prospect Street<br />
+        Hatfield, Pretoria 0083<br />
+        <abbr title="Phone">P:</abbr>
+        011 425 3777
+    </address>
+
+    <address>
+        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address>
+    <br />
+    <br />
+    <a class="btn btn-danger " href="@Url.Action("FormsUpdate","Admin")">Update</a>
+    <a class="btn btn-danger " href="@Url.Action("FormsDelete","Admin")">Delete</a>
+
+</form>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
